@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RSU_Royal_Prima_App</string>
+    <string name="hint_username">Username</string>
+    <string name="welcome_app">Welcome to App RSU Royal Prima</string>
+    <string name="hint_password">Password</string>
+    <string name="toast_empty_data">Username dan Password tidak boleh kosong</string>
+    <string name="toast_username_and_password_wrong">Username dan Password salah</string>
+    <string name="data_doctor">Data Dokter</string>
+    <string name="register_patient">Daftar Pasien</string>
+    <string name="display_queue">Tampilan Antrian</string>
+    <string name="status_queue">Status Antrian</string>
+    <string name="title_splashscreen">Welcome To App Hospital</string>
+    <string name="data_patient">Data Pasien</string>
+    <string name="system_queuing_online">Sistem Antrian Online</string>
+    <string name="message_empty_list">Tidak Ada Data Disini</string>
+    <string name="male">Laki-Laki</string>
+    <string name="female">Perempuan</string>
+    <string name="patient_bpjs">Pasien BPJS</string>
+    <string name="patient_non_bpjs">Pasien Non BPJS</string>
+    <string name="successfully_add_toast">Data Berhasil %s</string>
+    <string name="failed_add_toast">Gagal menambahkan data, Periksa kembali inputan</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="title_dialog">Hapus data %s</string>
+    <string name="message_dialog">Apakah anda yakin ingin menghapus data %s</string>
+    <string name="toast_delete_success">Berhasil Menghapus Data %s</string>
+    <string name="toast_delete_failed">Gagal Menghapus Data %s</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="ok">Oke</string>
+    <string name="cancel">Batal</string>
+</resources>

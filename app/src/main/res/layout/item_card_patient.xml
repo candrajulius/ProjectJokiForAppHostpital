@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:text="Nama Pasien"
+            android:id="@+id/tv_name_patient"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Alamat Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_address_patient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Telepon Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_telephone_patient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Jenis Kelamin Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_gender_patient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Nomor KTP"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_number_ktp_patient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Golongna Darah Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_blood_group_patient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Tempat Lahir Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_place_of_birthday_patient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Tanggal Lahir Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_date_of_birth" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Pekerjaan Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_job_patient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Status Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_status_patient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Nomor BPJS Pasien"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_number_bpjs_patient" />
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_edit"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/green_light"
+                android:clickable="true"
+                app:cardCornerRadius="10dp"
+                >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_delete"
+                android:focusable="true"
+                android:layout_marginStart="8dp"
+                app:cardBackgroundColor="@color/red_delete"
+                android:clickable="true"
+                app:cardCornerRadius="10dp"
+                >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Hapus"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

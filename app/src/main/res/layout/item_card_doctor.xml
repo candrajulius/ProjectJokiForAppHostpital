@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Nama Dokter"
+            android:id="@+id/tv_name_doctor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/tv_name_doctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_specialist_doctor"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_doctor"
+            android:text="Spesialis dokter" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_address_doctor"
+            app:layout_constraintStart_toStartOf="@id/tv_specialist_doctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialist_doctor"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="Alamat dokter"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_address_doctor"
+            android:text="No ktp dokter"
+            android:id="@+id/tv_number_ktp_doctor"
+            app:layout_constraintTop_toBottomOf="@id/tv_address_doctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_number_ktp_doctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:id="@+id/containerDetail"
+            android:layout_width="wrap_content"
+           >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_edit"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/green_light"
+                android:clickable="true"
+                app:cardCornerRadius="10dp"
+                >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_delete"
+                android:focusable="true"
+                android:layout_marginStart="8dp"
+                app:cardBackgroundColor="@color/red_delete"
+                android:clickable="true"
+                app:cardCornerRadius="10dp"
+                >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Hapus"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
